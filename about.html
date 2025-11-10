@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>About - Soft Touch Gloves</title>
+    <meta name="description"
+        content="Learn About Soft Touch Gloves: Your trusted wholesale supplier and exporter of premium work, safety, and industrial gloves in bulk quantity. Browse our articles and email us today for export.">
+</head>
+
+<body>
+    <!-- ===== Navbar ===== -->
+    <header class="navbar">
+        <a href="index.html">
+            <img class="logo" src="images/glove-logo.webp" alt="soft-touch-gloves-logo.webp" />
+        </a>
+        <div class="nav-items">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div>
+        <img class="about-img fade-in" src="images/about.webp" alt="about-soft-touch-gloves.webp">
+    </div>
+
+    <div class="con-about fade-in">
+        <div>
+            <h3 class="hthree">WE ARE</h3>
+            <h1 class="hone">Soft Touch Gloves</h1>
+            <p class="pone">Soft Touch Gloves is set up in the midst of a vast area of production and export in
+                Faisalabad, Pakistan. The installation of machinery was completed in November 1992, and commercial
+                production commenced on 1st October 1993. We are reflecting our commitment to global quality, safety,
+                and ethical standards.
+
+                High quality, which is bound to generate global demand, is meticulously materialized through careful
+                planning of this unit. No compromises are allowed—from the selection of appropriate cotton lint or
+                leather to the delivery of goods to our respected clients. To achieve perfection in the process,
+                state-of-the-art machinery has been installed.
+
+                Quality assurance of gloves produced increasingly challenges human perception. To meet this need, a
+                fully computerized laboratory system has been set up to check and countercheck all necessary quality
+                parameters.
+
+                The credit for the continuing success of Soft Touch Gloves clearly goes to well-communicated and
+                strictly implemented management policies. Our strength is derived from a strong belief in the potential
+                of each committed individual, endeavoring at every level of responsibility for the long-term success of
+                the company. True involvement in the affairs and interests of the company within each individual’s area
+                is always ensured.</p>
+            <div class="button-new fade-in">
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div>
+            <img class="fade-in" style="width: 350px;" src="images/data-analysis.webp" alt="data-analysis.webp">
+        </div>
+    </div>
+
+    <div class="con-founder con-about fade-in">
+        <div class="margin">
+            <h1 class="founder-name fade-in">Our Aim</h1>
+            <img style="width: 100%; border-radius: 90px;" src="images/download.webp" alt="our-aim.webp">
+
+        </div>
+        <div class="fade-in">
+            <h3 class="hthree">Soft Touch Gloves</h3>
+            <h1 class="hone">Human Resource</h1>
+            <p class="pone">Long-term commitment is a main factor in the industrial production of high quality goods.
+                Experience combined with innovation enable us to meet constantly high quality targets. Our employees are
+                the source of experience and innovation. Each employee is a specialist in his field with one goal; to
+                make something already good even better and to set new quality standards for the whole industry. We at
+                Sunshine Gloves., provide environment where each individual contributes at his or her best!</p>
+        </div>
+    </div>
+
+
+
+    <div class="container-five fade-in">
+        <div class="imgg">
+            <img class="img-logo" src="images/glove-logo.webp" alt="soft-touch-gloves-logo.webp" />
+        </div>
+        <div class="center">
+            <h3 class="subheading">We Export</h3>
+            <div class="footer-items">
+                <ul>
+                    <li><a href="products.html">Cotton Gloves</a></li>
+                    <li><a href="products.html">Poly-Cotton Gloves</a></li>
+                    <li><a href="products.html">Garments</a></li>
+                    <li><a href="products.html">Winter Set</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h3 class="subheading">Soft Touch Gloves</h3>
+            <p class="footer-p">
+                Ramzanabad, Faisalabad
+                38000 - Pakistan.
+            </p>
+            <a class="emailtag" target="_blank" href="mailto:info@softtouchgloves.com">
+                <p class="footer-p">info@softtouchgloves.com</p>
+            </a>
+            <p class="footer-p">+92 308 3949 839</p>
+        </div>
+    </div>
+
+    <hr />
+    <footer>
+        <p class="foot">
+            © 2016-25 Soft Touch Gloves | All Rights Reserved | Powered by: <a class="anchor"
+                href="https://www.instagram.com/developerahmed">Developer Ahmed</a>
+        </p>
+    </footer>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const observerOptions = {
+
+                root: null,
+
+                rootMargin: "0px",
+
+                threshold: 0.1
+
+            };
+
+
+
+            const observer = new IntersectionObserver((entries, observer) => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add('visible');
+
+                    } else {
+
+                        entry.target.classList.remove('visible');
+
+                    }
+
+                });
+
+            }, observerOptions);
+
+
+
+            document.querySelectorAll('.fade-in').forEach(element => {
+
+                observer.observe(element);
+
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
